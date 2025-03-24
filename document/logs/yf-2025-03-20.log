@@ -1,0 +1,5 @@
+[yf] [31m 	[error] [0m 	[2025-03-20 11:54:00] 	错误 	logrus_split.go:89
+[yf] [33m 	[warning] [0m 	[2025-03-20 11:54:00] 	警告 	logrus_split.go:90
+[yf] [32m 	[info] [0m 	[2025-03-20 11:54:00] 	信息 	logrus_split.go:91
+[yf] [35m 	[debug] [0m 	[2025-03-20 11:54:00] 	调试 	logrus_split.go:92
+[yf] [32m 	[info] [0m 	[2025-03-20 11:54:00] 	打印 	logrus_split.go:93

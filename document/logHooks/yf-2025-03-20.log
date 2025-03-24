@@ -1,0 +1,4 @@
+time="2025-03-20T12:09:52+08:00" level=error msg="错误"
+time="2025-03-20T12:09:52+08:00" level=warning msg="警告"
+time="2025-03-20T12:09:52+08:00" level=info msg="信息"
+time="2025-03-20T12:09:52+08:00" level=info msg="打印"

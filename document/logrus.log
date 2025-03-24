@@ -1,0 +1,4 @@
+time="2025-03-19T20:43:47+08:00" level=info msg="信息"
+time="2025-03-19T20:43:47+08:00" level=error msg="错误"
+time="2025-03-19T20:43:47+08:00" level=error msg="错误 格式化"
+time="2025-03-19T20:43:47+08:00" level=error msg="错误 换行"
