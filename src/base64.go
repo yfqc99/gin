@@ -7,7 +7,8 @@ import (
 
 func main() {
 	// 要编码的字符串
-	data := "hello world"
+	data := "foo:bar"
+	//Zm9vOmJhcg==
 
 	// 使用标准 Base64 编码
 	encoded := base64.StdEncoding.EncodeToString([]byte(data))

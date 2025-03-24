@@ -29,8 +29,8 @@ func main() {
 
 	// /admin/secrets 端点
 	// 触发 "localhost:8080/admin/secrets
-	// 需要对用户名和password进行base64编码
-	// 需要在请求头中添加Authorization，值为Basic base64(username:password)
+	// 需要对用户名和password(username:password)进行base64编码
+	// 需要在请求头中添加Authorization，值为Basic username:password
 	authorized.GET("/secrets", func(c *gin.Context) {
 		// 获取用户，它是由 BasicAuth 中间件设置的
 		//获取通过 BasicAuth 中间件认证的用户名
