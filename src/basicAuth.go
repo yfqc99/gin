@@ -29,6 +29,7 @@ func main() {
 
 	// /admin/secrets 端点
 	// 触发 "localhost:8080/admin/secrets
+	// 需要对用户名和password进行base64编码
 	// 需要在请求头中添加Authorization，值为Basic base64(username:password)
 	authorized.GET("/secrets", func(c *gin.Context) {
 		// 获取用户，它是由 BasicAuth 中间件设置的
@@ -41,7 +42,17 @@ func main() {
 			c.JSON(http.StatusOK, gin.H{"user": user, "secret": "NO SECRET :("})
 		}
 	})
-
+	// 不添加
+	//[GIN] 2025/03/24 - 20:58:09 | 401 |         555µs |       127.0.0.1 | GET      "/admin/secrets"
+	// 添加Authorization	Basic Zm9vOmJhcg==
+	//[GIN] 2025/03/24 - 21:32:48 | 200 |         999µs |       127.0.0.1 | GET      "/admin/secrets"
+	//{
+	//	"secret": {
+	//	"email": "foo@bar.com",
+	//		"phone": "123433"
+	//},
+	//	"user": "foo"
+	//}
 	// 监听并在 0.0.0.0:8080 上启动服务
 	r.Run(":8090")
 }
